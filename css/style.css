@@ -24,8 +24,7 @@ img {
 
 .header-container {
   border-bottom: 1px solid #e7e9fc;
-  box-shadow: 0px 2px 1px rgba (46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba (46, 47, 66, 0.08);
+  box-shadow: 0px 2px 1px rgba (46, 47, 66, 0.08);
 }
 
 .header-section {
@@ -225,6 +224,16 @@ img {
   width: calc((100% - 3 * 16px) / 3);
 }
 
+.portfolio-links {
+  text-decoration: none;
+  display: block;
+}
+
+.portfolio-links:hover .portfolio-links:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 .portfolio-section {
   padding-top: 96px;
   padding-bottom: 120px;
@@ -259,6 +268,8 @@ img {
   background-color: #404bbf;
   color: #ffffff;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .portfolio-list {
@@ -330,7 +341,7 @@ img {
 }
 .team-social-media-list {
   list-style: none;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   gap: 24px;
   fill: #f4f4fd;
@@ -340,12 +351,15 @@ img {
   background-color: var(--IRIS, #4d5ae5);
   width: 40px;
   height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .social-media-links {
   width: 100%;
   height: 100%;
-  background-color: var(--IRIS, #4d5ae5);
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -354,6 +368,10 @@ img {
 
 .social-media-icon {
   fill: #f4f4fd;
+}
+
+.team-social-media-icon:hover .team-social-media-icon:focus {
+  background-color: #404bbf;
 }
 
 .social-media-links:hover .social-media-links:focus {
@@ -366,8 +384,6 @@ img {
 
 .customers-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   gap: 24px;
 }
 
@@ -401,10 +417,14 @@ img {
   text-decoration: none;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+
 .footer-social-media {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
 }
 
 .footer-section {
@@ -436,6 +456,10 @@ img {
   max-width: 264px;
 }
 
+.first-part {
+  margin-right: 120px;
+}
+
 .second-paragraph {
   color: var(--WHITE, #fff);
   font-family: Roboto;
@@ -456,6 +480,11 @@ img {
 .footer-social-media-icon {
   width: 40px;
   height: 40px;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-.social-media-links {
