@@ -1,7 +1,15 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --body-font-family: "Roboto", sans-serif;
   --logo-font-family: "Raleway", sans-serif;
   --color: var(--IRIS, #4d5ae5);
+  --background-color: var(--IRIS, #4d5ae5);
+  --border-color: var(--OCEAN, #404bbf);
 }
 
 /* Global Style */
@@ -21,6 +29,14 @@ p {
 
 img {
   display: block;
+}
+
+div {
+  display: block;
+}
+
+ul {
+  padding: 0%;
 }
 
 /* Classes */
@@ -379,7 +395,11 @@ img {
   fill: #f4f4fd;
 }
 
-.social-media-links:hover .social-media-links:focus {
+.social-media-links:hover {
+  background-color: #404bbf;
+}
+
+.social-media-links:focus {
   background-color: #404bbf;
 }
 
@@ -412,9 +432,14 @@ img {
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.customers-link:hover .customers-link:focus {
-  border-color: #404bbf;
-  color: #404bbf;
+.customers-link:hover {
+  border-color: var(--OCEAN, #404bbf);
+  color: var(--OCEAN, #404bbf);
+}
+
+.customers-link:focus {
+  border-color: var(--OCEAN, #404bbf);
+  color: var(--OCEAN, #404bbf);
 }
 
 .customers-icon {
@@ -519,11 +544,11 @@ img {
   justify-content: center;
 }
 
-.footer-social-media-links:hover .footer-social-media-links:focus {
+.footer-social-media-links:hover {
   background-color: #31d0aa;
 }
 
-.footer-social-media-icon:hover .footer-social-media-icon:focus {
+.footer-social-media-links:focus {
   background-color: #31d0aa;
 }
 
