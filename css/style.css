@@ -446,7 +446,7 @@ ul {
 }
 
 .customers-icon {
-  fill: #8e8f99;
+  fill: currentColor;
 }
 
 .vector-paragraph {
