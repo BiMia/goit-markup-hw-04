@@ -11,6 +11,14 @@ body {
   background-color: #ffffff;
 }
 
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 img {
   display: block;
 }
@@ -411,6 +419,18 @@ img {
 
 .customers-icon {
   fill: #8e8f99;
+}
+
+.vector-paragraph {
+  color: var(--LIGHT-SLATE, #8e8f99);
+  font-family: Roboto;
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  width: 60.651px;
+  height: 6.931px;
+  flex-shrink: 0;
 }
 
 .link {
